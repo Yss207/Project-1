@@ -1,0 +1,9 @@
+publish to github
+
+GITHUB TERMS
+commit -> save
+push -> upload
+pull -> download
+
+git config --global user.name "Yss207" -->username
+git config --global user.email "suryawanshiyash04@gmail.com"
