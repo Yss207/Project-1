@@ -1,0 +1,34 @@
+:root {
+  --offcanvas-width: 250px;
+  --topNavBar-height: 56px;
+}
+
+.sidebar-nav {
+  width: var(--offcanvas-width) !important;
+}
+
+.offcanvas-body {
+    background-color: #030317 !important; /* Dark blue with a slightly lighter tone */
+    color: #fff !important; /* Keep text white for contrast */
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop {
+    content: none !important;
+    display: none !important;
+    position: unset !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width) !important;
+  }
+  .sidebar-nav {
+    transform: none !important;
+    visibility: visible !important;
+    top: var(--topNavBar-height) !important;
+    height: calc(100% - var(--topNavBar-height)) !important;
+    /* position: relative !important; */
+  }
+}
